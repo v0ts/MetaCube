@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MetaCube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalize  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- styles  -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="" class="header__icon-link">
+        <img src="./img/icon.webp" alt="MetaCube icon" class="header__icon" />
+      </a>
+
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="./index.html" class="header__link">Главная</a>
+        </li>
+        <li class="header__item">
+          <a href="./team.html" class="header__link">Наша команда</a>
+        </li>
+        <li class="header__item">
+          <a href="" class="header__link">Все товары</a>
+        </li>
+        <li class="header__item">
+          <a href="" class="header__link">Правила</a>
+        </li>
+      </ul>
+
+      <div class="header__profile">
+        <a href="" class="header__profile-link">
+          <img src="./img/profile.webp" alt="" class="header__profile-icon" />
+        </a>
+      </div>
+    </header>
+
+    <section class="team">
+      <div class="container">
+        <p class="team__title">Наша команда</p>
+        <ul class="team__list"></ul>
+      </div>
+    </section>
+
+    <div class="join-modal__flex-box">
+      <div class="join-modal">
+        <div class="join-modal__box">
+          <img
+            src="./img/icon.webp"
+            alt="MetaCube icon"
+            class="join-modal__icon"
+          />
+          <p class="join-modal__text">
+            Ты ещё не играешь на нашем проекте? Так чего ты ждёшь быстрей
+            оставляй заявку!
+          </p>
+          <a
+            target="_blank"
+            href="https://discord.com/channels/1331710054218600448/1332760178742919300"
+            class="join-modal__link"
+            >ПОДАТЬ ЗАЯВКУ!</a
+          >
+        </div>
+        <button type="button" class="join-modal__close">
+          <img
+            src="./img/close.webp"
+            alt="close icon"
+            class="join-modal__close-icon"
+          />
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="./team.js"></script>
+    <!-- aos init -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
